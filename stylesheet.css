@@ -553,11 +553,6 @@ Sidebar, Overlay, etc etc
 		background-attachment: scroll;
 	}
 
-	.uefnpage .hero {
-		min-height: 60svh;
-		height: auto;
-	}
-
 	.hero h1 {
 		font-size: clamp(3rem, 16vw, 5rem);
 		line-height: 0.9;
