@@ -1,390 +1,613 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
 @font-face {
-    font-family: 'Burbank Big Condensed Black';
-    src: url(Assets/Fonts/burbankbigcondensed_black.otf) format('opentype');
+	font-family: "Burbank Big Condensed Black";
+	src: url(Assets/Fonts/burbankbigcondensed_black.otf) format("opentype");
 }
 
 @font-face {
-    font-family: 'Burbank Big Condensed Bold';
-    src: url(Assets/Fonts/burbankbigcondensed_bold.otf) format('opentype');
+	font-family: "Burbank Big Condensed Bold";
+	src: url(Assets/Fonts/burbankbigcondensed_bold.otf) format("opentype");
 }
 
 :root {
-    --white-background: #ffffff90;
-    --black-color: #000000;
-    --accent-color: #ff8b71;
+	--white-background: #ffffff90;
+	--black-color: #000000;
+	--accent-color: #ff8b71;
 }
 
 * {
-
-    box-sizing: border-box;
-
+	box-sizing: border-box;
 }
 
-.homepage{
-    --hero-image: url(Assets/Images/FloodedZoneWars_1.png);
+html {
+	scroll-behavior: smooth;
 }
 
-.uefnpage{
-    --hero-image: url(Assets/Images/UEFN_1.png);
+.flooded {
+	--hero-image: url(Assets/Images/FloodedZoneWars_1.png);
 }
 
+.welcome {
+	--hero-image: none;
+}
+
+.uefnpage {
+	--hero-image: url(Assets/Images/UEFN_1.png);
+}
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    /* background-image: url(https://upload.wikimedia.org/wikipedia/commons/3/39/Typical_Street_In_The_Royal_Borough_Of_Kensington_And_Chelsea_In_London.jpg);*/
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	/* background-image: url(https://upload.wikimedia.org/wikipedia/commons/3/39/Typical_Street_In_The_Royal_Borough_Of_Kensington_And_Chelsea_In_London.jpg);*/
 }
 
 header {
-    /* background-color: var(--white-background);
+	/* background-color: var(--white-background);
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px); */
 
-    color: var(--black-color);
-    margin: 15px;
-    padding: 10px 15px;
+	color: var(--black-color);
+	margin: 15px;
+	padding: 10px 15px;
 
-    text-align: center;
+	text-align: center;
 
-    position: fixed;
-    top: 0;
-    left:0;
+	position: fixed;
+	top: 0;
+	left: 0;
 
-    height: 5svh;
-
+	height: 5svh;
 }
 
 header img {
-    width: clamp(40px, 8vw, 60px);
-    cursor: pointer;
-
+	width: clamp(40px, 8vw, 60px);
+	cursor: pointer;
 }
 
 header div {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    gap: 10px;
-    padding-left: 0.3%;
-    padding-right: 1.5%;
-
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	gap: 10px;
+	padding-left: 0.3%;
+	padding-right: 1.5%;
 }
 
 header div .logo {
-    justify-content: left;
-    gap: 10px;
+	justify-content: left;
+	gap: 10px;
 }
 
 /* Style the topnav */
 ul.topnav {
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  padding-right: 1.5%;
-  /* background-color: #333333; */
-  justify-content: center;
-  gap: 5px;
-  align-items: right;
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	padding-right: 1.5%;
+	/* background-color: #333333; */
+	justify-content: center;
+	gap: 5px;
+	align-items: right;
 }
 
 /* Style links in topnav */
 ul.topnav li a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* background-color: rgb(255, 255, 255, 0.15); */
-  color: #000000;
-  width: 150px;
-  height: 45px;
-  /* padding: 14px 16px; */
-  text-decoration: none;
-  border-radius: 15px;
-  text-align: center;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1) inset;
-  
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* background-color: rgb(255, 255, 255, 0.15); */
+	color: #000000;
+	width: 150px;
+	height: 45px;
+	/* padding: 14px 16px; */
+	text-decoration: none;
+	border-radius: 15px;
+	text-align: center;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1) inset;
 }
 
 /* Change color on hover */
 ul.topnav li a:hover {
-  background-color: var(--accent-color);
-  color: var(--black-color);
+	background-color: var(--accent-color);
+	color: var(--black-color);
 }
 
 .hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    /* padding-top: 90px; */
+	position: static;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	/* padding-top: 90px; */
 
-    min-height: 100svh;
-    height: auto;
+	min-height: 100svh;
+	height: auto;
 
-    background-attachment: fixed;
-    background-image: var(--hero-image);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    text-align: center;
+	background-attachment: fixed;
+	background-color: var(--accent-color);
+	background-image: var(--hero-image);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: white;
+	text-align: center;
 }
 
 .uefnpage .hero {
-    min-height: 50svh;
-    height: auto;
-    background-attachment:scroll;
+	min-height: 100svh;
+	height: auto;
+	background-attachment: fixed;
 }
 
 .hero h1 {
-    padding: 0 20px;
-    margin-bottom: 5px;
+	padding: 0 20px;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+	font-size: 4em;
+	color: white;
 
-    font-family: 'Burbank Big Condensed Black', Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    font-size: 4em;
-    color: white;
+	/* text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); */
+}
 
-    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+.hero.flooded h1 {
+	font-family: "Burbank Big Condensed Black", Arial, Helvetica, sans-serif;
+
+	padding: 0 20px;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+	font-size: 4em;
+	color: white;
+
+	text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+	z-index: 1;
 }
 
 .uefnpage .hero h1 {
-    font-size: 6em;
+	font-family: "Burbank Big Condensed Black", Arial, Helvetica, sans-serif;
+	text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+	font-size: 6em;
+	z-index: 1;
 }
 
 .hero p {
-    font-size: 1.2em;
+	font-size: 1.2em;
 }
 
-.hero button{
-        width: fit-content;
-    height:3em;
-    padding: 10px 30px;
-    background-color: var(--white-background);
-    -webkit-backdrop-filter: blur(0.1em);
-    backdrop-filter: blur(0.1em);
-    border: none;
-    border-radius: 0.75em;
-    cursor: pointer;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+.hero button {
+	width: fit-content;
+	height: 3em;
+	padding: 10px 30px;
+	background-color: var(--white-background);
+	-webkit-backdrop-filter: blur(0.1em);
+	backdrop-filter: blur(0.1em);
+	border: none;
+	border-radius: 0.75em;
+	cursor: pointer;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 
-
-
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 1em;
-    color: white;
-    text-transform: uppercase;
-    transition: 0.2s ease;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 1em;
+	color: white;
+	text-transform: uppercase;
+	transition: 0.2s ease;
 }
 
 .hero button:hover {
-    transform: scale(1.2);
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
-      background-color: var(--accent-color);
-
+	transform: scale(1.2);
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+	background-color: var(--accent-color);
 }
 
 .hero button a {
-    color: white;
-    text-decoration: none;
+	color: white;
+	text-decoration: none;
 }
+
+.buttonRow {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	align-items: center;
+}
+
+.buttonRow button {
+	width: 340px;
+	height: 3em;
+	padding: 10px 30px;
+	background-color: var(--white-background);
+	-webkit-backdrop-filter: blur(0.1em);
+	backdrop-filter: blur(0.1em);
+	border: none;
+	border-radius: 15px;
+	cursor: pointer;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 1rem;
+	color: white;
+	text-transform: uppercase;
+	transition: 0.2s ease;
+	z-index: 0;
+}
+
+.buttonRow button:hover {
+	transform: none;
+	z-index: 1;
+	width: 350px;
+	background-color: var(--white-background);
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+	display: flex;
+	flex-direction: row;
+
+	background-color: lightgray;
+}
+
+.footer .copyright {
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+	font-size: 0.7em;
+	justify-self: left;
+	gap: 0.01rem;
+	width: 50%;
+}
+
+.copyright h1 {
+	font-size: 1.5em;
+	margin: 0;
+}
+
+.copyright p {
+	margin-bottom: 5;
+	text-align: left;
+}
+
+.socialmenu {
+	background-color: lightgray;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 1em;
+	margin-right: 20px;
+	margin-left: auto;
+}
+
+.fa {
+	padding: 5px;
+	font-size: 30px;
+	color: darkgray;
+
+	text-align: center;
+	text-anchor: middle;
+	text-decoration: none;
+	align-content: center;
+	width: 2em;
+	height: 2em;
+
+	border-radius: 2.5em;
+	background-color: var(--white-background);
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+	transition: 0.1s;
+}
+
+.fa:hover {
+	color: white;
+	background-color: var(--accent-color);
+}
+
+.content {
+	margin: 20px;
+	text-align: center;
+}
+
+.content .testAnim:hover {
+	display: inline-block;
+
+	font-size: 1em;
+
+	line-height: 1em;
+
+	height: 1em;
+	width: 7%;
+	text-anchor: middle;
+	text-align: center;
+
+	vertical-align: baseline;
+
+	color: #000000;
+
+	animation: testAnim 1s infinite;
+
+	text-transform: uppercase;
+}
+
+@keyframes testAnim {
+	/* 0% {color: black;}
+    20% {color: red;}
+    50% {color: blue;}
+    80% {color: green;}
+    100% {color: black;} */
+
+	0% {
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	20% {
+		font-family: "Courier New", Courier, monospace;
+	}
+	40% {
+		font-family:
+			"Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+			"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	}
+	60% {
+		font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+	}
+	80% {
+		font-family: "Times New Roman", Times, serif;
+	}
+}
+.typewriter-card {
+	width: 60vw;
+	max-width: 900px;
+	min-width: 280px;
+
+	margin: 20px auto;
+	padding: 1vw;
+
+	background-color: var(--white-background);
+	-webkit-backdrop-filter: blur(20px);
+	backdrop-filter: blur(20px);
+
+	border-radius: 1vw;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
+	text-align: left;
+}
+
+.typewriter-card p {
+	margin: 0;
+	font-weight: bold;
+	color: black;
+	/* text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); */
+	gap: 0.25em;
+
+	display: flex;
+	align-items: center;
+	justify-content: left;
+
+	white-space: nowrap;
+}
+
+#typewriter {
+	display: inline-block;
+	text-align: left;
+}
+
+.cursor {
+	display: inline-block;
+	line-height: 1;
+	margin: -0.25em;
+	transform: translateY(-0.08em);
+	animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+	0%,
+	50% {
+		opacity: 1;
+	}
+
+	51%,
+	100% {
+		opacity: 0;
+	}
+}
+
+/*
+Leave below at bottom of page
+Sidebar, Overlay, etc etc
+
+*/
 
 /* The sidepanel menu */
 .sidepanel {
-  height: 100svh; /* Specify a height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 999; /* Stay on top */
-  top: 0;
-  left: 0;
+	height: 100svh; /* Specify a height */
+	width: 0; /* 0 width - change this with JavaScript */
+	position: fixed; /* Stay in place */
+	z-index: 999; /* Stay on top */
+	top: 0;
+	left: 0;
 
-  background-color: var(--white-background); /* Black*/
-      background-color: var(--white-background);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+	background-color: var(--white-background); /* Black*/
+	background-color: var(--white-background);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
 
-
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.3s ease; /* 0.5 second transition effect to slide in the sidepanel */
-
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 60px; /* Place content 60px from the top */
+	transition: 0.3s ease; /* 0.5 second transition effect to slide in the sidepanel */
 }
 
 /* The sidepanel links */
 .sidepanel a {
-    font-family: Arial, Helvetica, sans-serif;
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 1.5em;
-  font-weight:600;
-  color: black;
-  display: block;
-  text-wrap-mode: nowrap;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 1.5em;
+	font-weight: 600;
+	color: black;
+	display: block;
+	text-wrap-mode: nowrap;
 
-  width: 100%;
-    transition: 0.5s;
+	width: 100%;
+	transition: 0.5s;
 
-    background-color: var(--white-background);
-    background: transparent;
+	background-color: var(--white-background);
+	background: transparent;
 
-    text-transform: uppercase;
-
+	text-transform: uppercase;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidepanel a:hover {
-  color: rgb(255, 255, 255);
-  background-color: var(--accent-color);
-    transition: 0.1s;
-    cursor: pointer;
+	color: rgb(255, 255, 255);
+	background-color: var(--accent-color);
+	transition: 0.1s;
+	cursor: pointer;
 }
 
 .sidepanel a.coming-soon {
-    cursor: not-allowed;
+	cursor: not-allowed;
 }
 
 .sidepanel a.coming-soon::before {
-    content: attr(data-text);
+	content: attr(data-text);
 }
 
 .sidepanel a.coming-soon:hover::before {
-    content: attr(data-hover);
+	content: attr(data-hover);
 }
 
 .sidepanel .closebtn {
-    position: absolute;
-    top: 10px;
-    right: 20px;
+	position: absolute;
+	top: 10px;
+	right: 20px;
 
-    width: auto;
-    height: auto;
-    padding: 0;
+	width: auto;
+	height: auto;
+	padding: 0;
 
-    font-size: 36px;
-    line-height: 1em;
+	font-size: 36px;
+	line-height: 1em;
 
-    background: transparent;
-    box-shadow: none;
-    border: none;
+	background: transparent;
+	box-shadow: none;
+	border: none;
 
-    text-decoration: none;
-    color: black;
-    transition: 0.3s;
+	text-decoration: none;
+	color: black;
+	transition: 0.3s;
 }
 
 .sidepanel .closebtn:hover {
-        width: auto;
-    height: auto;
-    background: transparent;
-    color: red;
-    transition: 0.3s;
+	width: auto;
+	height: auto;
+	background: transparent;
+	color: red;
+	transition: 0.3s;
 }
 
 #overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: transparent;
-    z-index: 998;
+	display: none;
+	position: fixed;
+	inset: 0;
+	background: transparent;
+	z-index: 998;
 }
 
 .popup {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 
-    background-color: var(--white-background);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+	background-color: var(--white-background);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
 
-    padding: 25px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+	padding: 25px;
+	border-radius: 20px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 
-    z-index: 2000;
-    text-align: center;
+	z-index: 2000;
+	text-align: center;
 }
 
 .popup button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 12px;
-    background-color: var(--accent-color);
-    cursor: pointer;
-    font-weight: bold;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 12px;
+	background-color: var(--accent-color);
+	cursor: pointer;
+	font-weight: bold;
 }
 
-
 @media (max-width: 768px) {
-    .hero {
-        min-height: 100svh;
-        height: auto;
-        padding: 80px 16px 40px;
-        background-attachment: scroll;
-    }
+	.hero {
+		min-height: 100svh;
+		height: auto;
+		padding: 80px 16px 40px;
+		background-attachment: scroll;
+	}
 
-    .uefnpage .hero {
-        min-height: 60svh;
-        height: auto;
-    }
+	.uefnpage .hero {
+		min-height: 60svh;
+		height: auto;
+	}
 
-    .hero h1 {
-        font-size: clamp(3rem, 16vw, 5rem);
-        line-height: 0.9;
-    }
+	.hero h1 {
+		font-size: clamp(3rem, 16vw, 5rem);
+		line-height: 0.9;
+	}
 
-    .uefnpage .hero h1 {
-        font-size: clamp(4rem, 20vw, 6rem);
-    }
+	.uefnpage .hero h1 {
+		font-size: clamp(4rem, 20vw, 6rem);
+	}
 
-    .hero p {
-        font-size: 1rem;
-        padding: 0 10px;
-    }
+	.hero p {
+		font-size: 1rem;
+		padding: 0 10px;
+	}
 
-    .hero button {
-        min-width: 9em;
-        min-height: 3em;
-        font-size: 0.95rem;
-    }
+	.hero button {
+		min-width: 9em;
+		min-height: 3em;
+		font-size: 0.95rem;
+	}
 
-    .hero button:hover {
-        transform: scale(1.05);
-        background-color: var(--white-background);
-    }
+	.hero button:hover {
+		transform: scale(1.05);
+		background-color: var(--white-background);
+	}
 
-    header {
-        margin: 10px;
-        padding: 8px;
-    }
+	header {
+		margin: 10px;
+		padding: 8px;
+	}
 
-    header img {
-        width: clamp(38px, 10vw, 50px);
-    }
+	header img {
+		width: clamp(38px, 10vw, 50px);
+	}
 
-    .sidepanel {
-        max-width: 85vw;
-    }
+	.sidepanel {
+		max-width: 85vw;
+	}
 
-    .sidepanel a {
-        width: 100%;
-        font-size: 1.2rem;
-        padding: 12px 20px 12px 28px;
-        white-space: nowrap;
-    }
+	.sidepanel a {
+		width: 100%;
+		font-size: 1.2rem;
+		padding: 12px 20px 12px 28px;
+		white-space: nowrap;
+	}
 
-    .sidepanel a:hover {
-        width: 100%;
-    }
+	.sidepanel a:hover {
+		width: 100%;
+	}
 
-    .sidepanel .closebtn {
-        font-size: 34px;
-    }
+	.sidepanel .closebtn {
+		font-size: 34px;
+	}
 }
