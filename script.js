@@ -1,6 +1,6 @@
 
         function openNav() {
-            document.getElementById("mySidepanel").style.width = "250px";
+            document.getElementById("mySidepanel").style.width = "250svh";
             document.getElementById("overlay").style.display = "block";
         }
 
