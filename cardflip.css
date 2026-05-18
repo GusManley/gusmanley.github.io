@@ -1,13 +1,30 @@
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.section-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	gap: 50px;
+	margin: 50px;
+}
+
+.sectiontext {
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+	align-content: flex-start;
+}
+
 .flip-card {
 	background-color: transparent;
 	width: 200px;
 	height: 320px;
 	perspective: 1000px;
-	margin: 100px auto;
+	/* margin: 100px auto; */
 
 	view-timeline-name: --cardFlip;
 	view-timeline-axis: block;
+
+	cursor: pointer;
 }
 
 .flip-card img {
@@ -22,13 +39,51 @@
 	height: 100%;
 	text-align: center;
 	transform-style: preserve-3d;
+	/* transform: scale(1) rotateY(0deg); */
 
-	animation-name: flip;
+	transition: transform 0.4s ease;
+
+	/* animation-name: flip;
 	animation-duration: 1s;
 	animation-timing-function: linear;
 	animation-fill-mode: both;
-	animation-timeline: scroll();
-	animation-range: 30% 50%;
+	/* animation-timeline: scroll();
+	animation-range: 30% 50%; */
+}
+
+.flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+}
+
+/* .flip-card:not(:hover) .flip-card-inner {
+	animation: flipGrowBack 0.8s ease-in-out forwards;
+} */
+
+@keyframes flipGrowForward {
+	0% {
+		transform: scale(1) rotateY(0deg);
+	}
+
+	50% {
+		transform: scale(1.1) rotateY(180deg);
+	}
+	100% {
+		transform: scale(1) rotateY(180deg);
+	}
+}
+
+@keyframes flipGrowBack {
+	0% {
+		transform: scale(1) rotateY(180deg);
+	}
+
+	50% {
+		transform: scale(1.1) rotateY(0deg);
+	}
+
+	100% {
+		transform: scale(1) rotateY(0deg);
+	}
 }
 
 @keyframes flip {
@@ -57,6 +112,7 @@
 	background-color: #bbb;
 	color: black;
 	border-radius: 10px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 /* Style the back side */
@@ -65,4 +121,5 @@
 	color: white;
 	transform: rotateY(180deg);
 	border-radius: 10px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }

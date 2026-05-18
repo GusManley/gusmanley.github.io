@@ -240,6 +240,14 @@ ul.topnav li a:hover {
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
+.section-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	gap: 50px;
+	margin: 50px;
+}
+
 .footer {
 	display: flex;
 	flex-direction: row;

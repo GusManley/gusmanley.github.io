@@ -81,9 +81,9 @@ function typeEffect() {
 typeEffect();
 
 document.addEventListener("DOMContentLoaded", function () {
-	const flipCards = document.querySelectorAll(".flip-card");
+	const cards = document.querySelectorAll(".flip-card");
 
-	flipCards.forEach(function (card) {
+	cards.forEach(function (card) {
 		card.addEventListener("click", function () {
 			card.classList.toggle("flipped");
 		});
