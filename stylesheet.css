@@ -572,6 +572,11 @@ Sidebar, Overlay, etc etc
 		flex-direction: column;
 		gap: 0;
 	}
+	
+	
+.footer .copyright {
+	width: 100%;
+}
 
 	.socialmenu {
 		background-color: lightgray;
