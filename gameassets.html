@@ -6,6 +6,7 @@
 		<meta name="charset" content="UTF-8" />
 		<meta name="author" content="Gus Manley" />
 		<link rel="stylesheet" href="stylesheet.css" />
+		<link rel="stylesheet" href="cardflip.css" />
 		<script src="script.js" defer></script>
 	</head>
 	<body>
@@ -17,7 +18,7 @@
 			<a href="uefn.html">UEFN</a>
 			<a class="coming-soon">Unreal Engine</a>
 			<a class="coming-soon">Unity</a>
-			<a href="gameassets.html">Asset Design</a>
+			<a class="coming-soon">Asset Design</a>
 		</div>
 
 		<div id="overlay" onclick="closeNav()"></div>
@@ -26,29 +27,20 @@
 				<img src="icon.png" />
 			</span>
 		</header>
-
-		<div class="hero welcome">
-			<h1>Hey, it's Gus.</h1>
-			<h2>So glad you could make it :)</h2>
-			<div class="typewriter-card">
-				<p>I make <span id="typewriter"></span><span class="cursor">|</span></p>
-			</div>
-			<div class="buttonRow">
-				<button><a href="#flooded">Find out more</a></button>
-				<button><a href="#socials">Check out my socials</a></button>
+		<div class="hero flooded"></div>
+		<div class="flip-card">
+			<div class="flip-card-inner">
+				<div class="flip-card-front">
+					<img src="Assets/Images/ActionCard_Back.png" alt="Avatar" />
+				</div>
+				<div class="flip-card-back">
+					<img src="Assets/Images/ActionCard_Front.png" alt="Avatar" />
+				</div>
 			</div>
 		</div>
 
-		<div class="hero flooded" id="flooded">
-			<h1 class="fn">Flooded Tilted Zone Wars</h1>
-			<button>
-				<a
-					href="https://www.fortnite.com/@gussyxv/8880-4243-2150"
-					target="_blank"
-					>Play Now &#10132;</a
-				>
-			</button>
-		</div>
+		<div class="hero flooded"></div>
+
 		<div class="footer">
 			<div class="copyright">
 				<h1>Copyright Notice</h1>

@@ -79,3 +79,13 @@ function typeEffect() {
 }
 
 typeEffect();
+
+document.addEventListener("DOMContentLoaded", function () {
+	const flipCards = document.querySelectorAll(".flip-card");
+
+	flipCards.forEach(function (card) {
+		card.addEventListener("click", function () {
+			card.classList.toggle("flipped");
+		});
+	});
+});
