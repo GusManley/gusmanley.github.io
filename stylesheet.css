@@ -24,6 +24,17 @@ html {
 	scroll-behavior: smooth;
 }
 
+body {
+	min-height: 100%;
+	margin: 0;
+}
+
+body {
+	min-height: 100svh;
+	display: flex;
+	flex-direction: column;
+}
+
 .flooded {
 	--hero-image: url(Assets/Images/FloodedZoneWars_1.png);
 }
@@ -59,6 +70,7 @@ header {
 	left: 0;
 
 	height: 5svh;
+	z-index: 50;
 }
 
 header img {
@@ -249,6 +261,7 @@ ul.topnav li a:hover {
 }
 
 .footer {
+	margin-top: auto;
 	display: flex;
 	flex-direction: row;
 
@@ -553,6 +566,21 @@ Sidebar, Overlay, etc etc
 		height: auto;
 		padding: 80px 16px 40px;
 		background-attachment: scroll;
+	}
+
+	.footer {
+		flex-direction: column;
+		gap: 0;
+	}
+
+	.socialmenu {
+		background-color: lightgray;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: left;
+		gap: 1em;
+		margin: 10px;
 	}
 
 	.hero h1 {
