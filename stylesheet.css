@@ -226,7 +226,7 @@ ul.topnav li a:hover {
   display: block;
   text-wrap-mode: nowrap;
 
-  width: 15%;
+  width: 100%;
     transition: 0.5s;
 
     background-color: var(--white-background);
@@ -240,8 +240,12 @@ ul.topnav li a:hover {
 .sidepanel a:hover {
   color: rgb(255, 255, 255);
   background-color: var(--accent-color);
-    transition: 0s;
-    width: 100%;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.sidepanel a.coming-soon {
+    cursor: not-allowed;
 }
 
 .sidepanel a.coming-soon::before {
@@ -353,6 +357,7 @@ ul.topnav li a:hover {
 
     .hero button:hover {
         transform: scale(1.05);
+        background-color: var(--white-background);
     }
 
     header {
