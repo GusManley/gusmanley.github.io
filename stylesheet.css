@@ -275,7 +275,7 @@ ul.topnav li a:hover {
 	font-size: 0.7em;
 	justify-self: left;
 	gap: 0.01rem;
-	width: 50%;
+	width: 70%;
 }
 
 .copyright h1 {
@@ -573,8 +573,8 @@ Sidebar, Overlay, etc etc
 		gap: 0;
 	}
 
-	.copyright {
-		width: 100%;
+	.footer .copyright {
+		width: 90svw;
 	}
 
 	.socialmenu {
@@ -582,7 +582,7 @@ Sidebar, Overlay, etc etc
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		justify-content: left;
+		justify-content: center;
 		gap: 1em;
 		margin: 10px;
 	}
