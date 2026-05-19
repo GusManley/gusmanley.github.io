@@ -560,6 +560,12 @@ Sidebar, Overlay, etc etc
 	font-weight: bold;
 }
 
+model-viewer {
+	width: 100%;
+	height: 50svh;
+	background-color: #eeeeee;
+}
+
 @media (max-width: 768px) {
 	.hero {
 		min-height: 100svh;
