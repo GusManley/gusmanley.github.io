@@ -8,6 +8,10 @@
 		<link rel="stylesheet" href="stylesheet.css" />
 		<link rel="stylesheet" href="cardflip.css" />
 		<script src="script.js" defer></script>
+		<script
+			type="module"
+			src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.2.0/model-viewer.min.js"
+		></script>
 	</head>
 	<body>
 		<div id="mySidepanel" class="sidepanel">
@@ -34,38 +38,100 @@
 				<p>Some examples of card assets I've created.</p>
 				<p>Hover (or click on mobile) to flip each card</p>
 			</div>
-			<div class="flip-card">
-				<div class="flip-card-inner">
-					<div class="flip-card-front">
-						<img src="Assets/Images/Cards/ActionCard_Back.png" alt="Avatar" />
-					</div>
-					<div class="flip-card-back">
-						<img src="Assets/Images/Cards/ActionCard_Front.png" alt="Avatar" />
-					</div>
-				</div>
-			</div>
-			<div class="flip-card">
-				<div class="flip-card-inner">
-					<div class="flip-card-front">
-						<img src="Assets/Images/Cards/Modifier_Back.png" alt="Avatar" />
-					</div>
-					<div class="flip-card-back">
-						<img src="Assets/Images/Cards/Modifier_Front.png" alt="Avatar" />
+			<div class="cards">
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<img src="Assets/Images/Cards/ActionCard_Back.png" alt="Avatar" />
+						</div>
+						<div class="flip-card-back">
+							<img
+								src="Assets/Images/Cards/ActionCard_Front.png"
+								alt="Avatar"
+							/>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="flip-card">
-				<div class="flip-card-inner">
-					<div class="flip-card-front">
-						<img src="Assets/Images/Cards/CashCard_Back.png" alt="Avatar" />
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<img src="Assets/Images/Cards/Modifier_Back.png" alt="Avatar" />
+						</div>
+						<div class="flip-card-back">
+							<img src="Assets/Images/Cards/Modifier_Front.png" alt="Avatar" />
+						</div>
 					</div>
-					<div class="flip-card-back">
-						<img src="Assets/Images/Cards/CashCard_Front.png" alt="Avatar" />
+				</div>
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<img src="Assets/Images/Cards/CashCard_Back.png" alt="Avatar" />
+						</div>
+						<div class="flip-card-back">
+							<img src="Assets/Images/Cards/CashCard_Front.png" alt="Avatar" />
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="section-container"><h2>More assets to be uploaded soon...</h2></div>
+		<div class="container alt">
+			<div class="container-text">
+				<h1>3D Assets</h1>
+			</div>
+			<div class="model-window">
+				<model-viewer
+					src="Assets/3D//Coffee_ForRender.glb"
+					alt="A 3D Coffee Scene"
+					camera-controls
+					auto-rotate
+				></model-viewer>
+			</div>
+		</div>
+		<div class="container-grid">
+			<div class="model-window">
+				<model-viewer
+					src="Assets/3D//Coffee_ForRender.glb"
+					alt="A 3D Coffee Scene"
+					camera-controls
+					auto-rotate
+				></model-viewer>
+			</div>
+			<div class="model-window">
+				<model-viewer
+					src="Assets/3D//Coffee_ForRender.glb"
+					alt="A 3D Coffee Scene"
+					camera-controls
+					auto-rotate
+				></model-viewer>
+			</div>
+			<div class="model-window">
+				<model-viewer
+					src="Assets/3D//Coffee_ForRender.glb"
+					alt="A 3D Coffee Scene"
+					camera-controls
+					auto-rotate
+				></model-viewer>
+			</div>
+			<div class="model-window">
+				<model-viewer
+					src="Assets/3D//Coffee_ForRender.glb"
+					alt="A 3D Coffee Scene"
+					camera-controls
+					auto-rotate
+				></model-viewer>
+			</div>
+			<div class="model-window">
+				<model-viewer
+					src="Assets/3D//Coffee_ForRender.glb"
+					alt="A 3D Coffee Scene"
+					camera-controls
+					auto-rotate
+				></model-viewer>
+			</div>
+		</div>
+		<div class="section-container">
+			<h2>More assets to be uploaded soon...</h2>
+		</div>
 		<div class="footer">
 			<div class="copyright">
 				<h1>Copyright Notice</h1>
