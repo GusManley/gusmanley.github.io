@@ -268,11 +268,19 @@ ul.topnav li a:hover {
 	display: flex;
 	flex-direction: row;
 	box-sizing: border-box;
-	/* justify-content: space-evenly; */
+	justify-content: space-between;
 	margin: 0px;
 	padding: 0 var(--text-padding);
 	background-color: var(--white-background);
 	/* box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); */
+}
+
+.container ul {
+	padding-left: 1em;
+}
+
+.container li {
+	padding-bottom: 1em;
 }
 
 .container.alt {
@@ -285,6 +293,62 @@ ul.topnav li a:hover {
 	justify-content: baseline;
 	align-content: center;
 	/* padding-left: var(--text-padding); */
+}
+
+.container h1 {
+	margin-bottom: 0;
+}
+
+.container p {
+	margin-top: 0.5em;
+}
+
+.container img {
+	float: right;
+	width: 50svw;
+	margin-right: calc(var(--text-padding) * -1);
+	height: auto;
+	display: block;
+	object-fit: cover;
+	object-position: center;
+}
+
+.container button {
+	flex: 1;
+	width: 90%;
+	height: 3em;
+	padding: 1em 30px;
+	background-color: var(--accent-color);
+	-webkit-backdrop-filter: blur(0.1em);
+	backdrop-filter: blur(0.1em);
+	border: none;
+	border-radius: 0.75em;
+	cursor: pointer;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 1em;
+	color: white;
+	text-transform: uppercase;
+	transition: 0.2s ease;
+	text-align: start;
+}
+
+.container button:hover {
+	transform: scale(1.05);
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+	background-color: var(--white-background);
+	color: black;
+}
+
+.container button a {
+	color: white;
+	text-decoration: none;
+}
+
+.container button:hover a {
+	color: black;
 }
 
 .section-container {
@@ -307,14 +371,13 @@ ul.topnav li a:hover {
 	margin-top: auto;
 	display: flex;
 	flex-direction: row;
-
 	background-color: lightgray;
 }
 
 .footer .copyright {
 	display: flex;
 	flex-direction: column;
-	margin: 20px;
+	margin: 1em var(--text-padding);
 	font-size: 0.7em;
 	justify-self: left;
 	gap: 0.01rem;
@@ -338,7 +401,7 @@ ul.topnav li a:hover {
 	align-items: center;
 	justify-content: flex-end;
 	gap: 1em;
-	margin-right: 20px;
+	margin-right: var(--text-padding);
 	margin-left: auto;
 }
 
@@ -744,4 +807,12 @@ model-viewer.banner {
 	.sidepanel .closebtn {
 		font-size: 34px;
 	}
+}
+
+.fn {
+	font-family: "Burbank Big Condensed Bold";
+}
+
+h1.fn {
+	font-size: 3em;
 }
