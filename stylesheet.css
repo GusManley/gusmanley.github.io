@@ -633,6 +633,10 @@ model-viewer {
 	margin: 0;
 }
 
+model-viewer.banner {
+	background-color: transparent;
+}
+
 @media (max-width: 768px) {
 	.hero {
 		min-height: 100svh;
