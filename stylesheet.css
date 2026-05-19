@@ -712,6 +712,22 @@ model-viewer.banner {
 		gap: 0;
 	}
 
+	.container {
+		flex-direction: column;
+	}
+
+	.container img {
+		width: calc(100% + (var(--text-padding) * 2));
+		margin: calc(var(--text-padding) * -1);
+		margin-top: 1em;
+		margin-bottom: auto;
+		padding: 1em, 0;
+		height: auto;
+		display: block;
+		object-fit: cover;
+		object-position: center;
+	}
+
 	.footer .copyright {
 		width: 90svw;
 	}
