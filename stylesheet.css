@@ -14,7 +14,7 @@
 	--white-background: #ffffff90;
 	--black-color: #000000;
 	--accent-color: #ff8b71;
-	--text-padding: 10svw;
+	--text-padding: max(50px, calc((100svw - 980px)/2));
 }
 
 * {
