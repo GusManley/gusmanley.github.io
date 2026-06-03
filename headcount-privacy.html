@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Privacy Policy | Headcounter</title>
+		<link rel="icon" type="image/x-icon" href="icon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="UTF-8" />
+		<meta name="author" content="Gus Manley" />
+		<link rel="stylesheet" href="stylesheet.css" />
+		<style>
+			.privacy-content {
+				max-width: 740px;
+				margin: 0 auto;
+				padding: 100px 24px 60px;
+				font-family: Arial, sans-serif;
+				color: #111;
+				line-height: 1.7;
+			}
+
+			.privacy-content h1 {
+				font-size: 2.2em;
+				margin-bottom: 0.2em;
+			}
+
+			.privacy-content .app-label {
+				font-size: 1em;
+				color: #666;
+				margin-top: 0;
+				margin-bottom: 2em;
+			}
+
+			.privacy-content h2 {
+				font-size: 1.15em;
+				margin-top: 2em;
+				margin-bottom: 0.3em;
+				color: #111;
+			}
+
+			.privacy-content p {
+				margin-top: 0.4em;
+				margin-bottom: 0.8em;
+				color: #333;
+			}
+
+			.privacy-content ul {
+				margin: 0.4em 0 0.8em 1.2em;
+				padding: 0;
+				color: #333;
+			}
+
+			.privacy-content ul li {
+				margin-bottom: 0.4em;
+			}
+
+			.privacy-content .updated {
+				font-size: 0.85em;
+				color: #888;
+				margin-top: 3em;
+				border-top: 1px solid #ddd;
+				padding-top: 1em;
+			}
+
+			.privacy-content a {
+				color: var(--accent-color);
+				text-decoration: none;
+			}
+
+			.privacy-content a:hover {
+				text-decoration: underline;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<span>
+				<a href="/"><img src="icon.png" /></a>
+			</span>
+		</header>
+
+		<div class="privacy-content">
+			<h1>Privacy Policy</h1>
+			<p class="app-label">Headcounter — iOS App</p>
+
+			<p>
+				Headcounter is designed to respect your privacy. This policy explains
+				what data exists, where it lives, and what happens when you use the app's
+				sharing feature.
+			</p>
+
+			<h2>Data stored on your device</h2>
+			<p>
+				All headcount entries, area names, counts, dates, confirmation records,
+				and signatures are stored locally on your device using iOS system storage
+				(UserDefaults). This data never leaves your device except through iCloud
+				sync if you choose to enable it (see below).
+			</p>
+
+			<h2>iCloud sync (optional)</h2>
+			<p>
+				If you enable iCloud in the app's settings, your headcount history and
+				area data are synced to your personal iCloud account using Apple's
+				iCloud Key-Value Store and iCloud Drive. This data is stored in
+				<strong>your own iCloud account</strong> — the developer has no access
+				to it. Apple's iCloud privacy policy applies.
+			</p>
+
+			<h2>Share feature</h2>
+			<p>
+				When you share a headcount entry via iMessage, the app constructs a URL
+				containing the entry's count, area names, and date encoded as Base64.
+				This URL points to a hosted web page
+				(<code>head-counter-share.vercel.app</code>) that renders a rich link
+				preview for the message bubble.
+			</p>
+			<p>
+				When this URL is fetched (by iMessage on the sender's or recipient's
+				device to render the preview), Vercel's servers process the request.
+				Like any web server, Vercel may retain standard access logs that include
+				the request URL and IP address. The developer does not access, store, or
+				use this data — it is subject to
+				<a href="https://vercel.com/legal/privacy-policy" target="_blank"
+					>Vercel's Privacy Policy</a
+				>.
+			</p>
+			<p>
+				The share payload does not include confirmation names or signatures —
+				only counts, area names, and the date.
+			</p>
+
+			<h2>Data we do not collect</h2>
+			<ul>
+				<li>No analytics or usage tracking</li>
+				<li>No advertising identifiers</li>
+				<li>No crash reporting services</li>
+				<li>No account registration or login</li>
+				<li>No data is ever sent to the developer</li>
+			</ul>
+
+			<h2>Children's privacy</h2>
+			<p>
+				The app does not collect any personal information from anyone, including
+				children.
+			</p>
+
+			<h2>Changes to this policy</h2>
+			<p>
+				If this policy changes, an updated version will be posted at this URL.
+				Continued use of the app constitutes acceptance of any updates.
+			</p>
+
+			<h2>Contact</h2>
+			<p>
+				Questions about privacy can be directed to
+				<a href="mailto:angus@gusmanley.com">angus@gusmanley.com</a>.
+			</p>
+
+			<p class="updated">Last updated: June 2026</p>
+		</div>
+
+		<div class="footer">
+			<div class="copyright">
+				<h1>Copyright Notice</h1>
+				<p>&copy; 2026 Angus Manley. All Rights Reserved.</p>
+			</div>
+		</div>
+	</body>
+</html>
