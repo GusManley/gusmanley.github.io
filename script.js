@@ -7,7 +7,7 @@ function buildSidebar() {
 		{ label: "Unreal Engine", comingSoon: true },
 		{ label: "Unity", comingSoon: true },
 		{ label: "Asset Design", href: "gameassets.html", spacer: true },
-		{ label: "Headcount", href: "headcount.html", spacer: true },
+		{ label: "Headcounter", href: "headcount.html", spacer: true },
 		{
 			label: "Privacy Policy",
 			href: "headcounter-privacy.html",
