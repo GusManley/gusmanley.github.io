@@ -781,6 +781,14 @@ model-viewer.banner {
 }
 
 @media (max-width: 980px) {
+	.headcountpage .hero h1 {
+		font-size: 2em;
+	}
+
+	.headcountpage-privacy .hero h1 {
+		font-size: 2em;
+	}
+
 	.hero {
 		min-height: 100svh;
 		height: auto;
