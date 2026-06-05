@@ -49,7 +49,10 @@ body {
 }
 
 .headcountpage {
-	--hero-image: url(Assets/Images/Headcount_1.png);
+	--accent-color: #17b8c5;
+}
+
+.headcountpage-privacy {
 	--accent-color: #17b8c5;
 }
 
@@ -644,7 +647,7 @@ Sidebar, Overlay, etc etc
 	font-size: 1.25em;
 	padding-left: 50px;
 	font-weight: 600;
-	color: darkgray;
+	color: #666666;
 }
 
 #overlay {
