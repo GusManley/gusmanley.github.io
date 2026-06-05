@@ -630,6 +630,13 @@ Sidebar, Overlay, etc etc
 	transition: 0.3s;
 }
 
+.sidepanel a.sub-link {
+	font-size: 1em;
+	padding-left: 48px;
+	font-weight: 500;
+	color: #444;
+}
+
 #overlay {
 	display: none;
 	position: fixed;

@@ -7,6 +7,7 @@
 		<meta charset="UTF-8" />
 		<meta name="author" content="Gus Manley" />
 		<link rel="stylesheet" href="stylesheet.css" />
+		<script src="script.js" defer></script>
 		<style>
 			.privacy-content {
 				max-width: 740px;
@@ -71,9 +72,11 @@
 		</style>
 	</head>
 	<body>
+		<div id="mySidepanel" class="sidepanel"></div>
+		<div id="overlay" onclick="closeNav()"></div>
 		<header>
-			<span>
-				<a href="/"><img src="icon.png" /></a>
+			<span onclick="openNav()">
+				<img src="icon.png" />
 			</span>
 		</header>
 
@@ -161,6 +164,34 @@
 			<div class="copyright">
 				<h1>Copyright Notice</h1>
 				<p>&copy; 2026 Angus Manley. All Rights Reserved.</p>
+				<p>
+					Unless otherwise stated, all original content on this website,
+					including text, images, designs, projects, and downloadable files, is
+					owned by Angus Manley and may not be copied, reproduced, modified,
+					distributed, or communicated without permission.
+				</p>
+				<p>
+					Third-party logos, trademarks, game screenshots, platform names, and
+					other referenced materials remain the property of their respective
+					owners.
+				</p>
+			</div>
+			<div id="socials" class="socialmenu">
+				<a
+					href="https://github.com/gusmanley"
+					class="fa fa-github"
+					target="_blank"
+				></a>
+				<a
+					href="https://youtube.com/@gusmanley"
+					class="fa fa-youtube"
+					target="_blank"
+				></a>
+				<a
+					href="https://instagram.com/gusmanley"
+					class="fa fa-instagram"
+					target="_blank"
+				></a>
 			</div>
 		</div>
 	</body>
